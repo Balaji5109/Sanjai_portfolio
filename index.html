@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sanjai Kumar — Video Editor &amp; Digital Marketer</title>
+<meta name="description" content="Sanjai Kumar — Video Editor, Digital Marketer &amp; Content Creator. Cinematic edits, brand growth, and storytelling that performs." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Cursor glow (desktop only, css handles hiding on touch) -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#hero" class="navbar__logo">SANJAI<span class="dot">.</span></a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#hero" class="nav-link active-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#tools" class="nav-link">Tools</a>
+      <a href="#impact" class="nav-link">Impact</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#photography" class="nav-link">Photography</a>
+      <a href="#reels" class="nav-link">Reels</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--ghost navbar__cta">Let's Connect</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#tools" class="mobile-link">Tools</a>
+    <a href="#impact" class="mobile-link">Impact</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#photography" class="mobile-link">Photography</a>
+    <a href="#reels" class="mobile-link">Reels</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="hero__lines" viewBox="0 0 1200 800" preserveAspectRatio="none">
+        <line x1="0" y1="150" x2="1200" y2="150" class="scan-line l1"/>
+        <line x1="0" y1="420" x2="1200" y2="420" class="scan-line l2"/>
+        <line x1="0" y1="650" x2="1200" y2="650" class="scan-line l3"/>
+      </svg>
+      <div class="hero__glow hero__glow--a"></div>
+      <div class="hero__glow hero__glow--b"></div>
+    </div>
+
+    <div class="hero__inner">
+      <div class="hero__content" data-reveal="left">
+        <p class="eyebrow">Video Editor · Digital Marketer</p>
+        <h1 class="hero__title">
+          <span class="line">Sanjai</span>
+          <span class="line">Kumar<span class="accent-dot">.</span></span>
+        </h1>
+
+        <div class="hero__roles" id="roleTicker" aria-live="polite">
+          <span class="role-item is-active">Video Editor</span>
+          <span class="role-item">Digital Marketer</span>
+          <span class="role-item">Content Creator</span>
+          <span class="role-item">Social Media Manager</span>
+        </div>
+
+        <p class="hero__desc">
+          Hi, I'm Sanjai — a B.Sc. Computer Science (AI &amp; DS) graduate passionate about
+          creating engaging visual stories that help brands grow through digital marketing
+          and professional video editing.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#photography" class="btn btn--primary">
+            <span>View My Work</span>
+          </a>
+          <a href="#contact" class="btn btn--secondary">Let's Connect</a>
+        </div>
+
+        <div class="hero__socials">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><line x1="7.5" y1="10" x2="7.5" y2="16.5" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="7" r="1.1" fill="currentColor"/><path d="M11 16.5V10M11 12.7c0-1.5 1-2.7 2.5-2.7s2.5 1.2 2.5 2.7v3.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+          <a href="mailto:hello@sanjaikumar.com" aria-label="Email" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__card" data-reveal="right">
+        <div class="profile-card">
+          <div class="profile-card__glow"></div>
+          <div class="profile-card__photo">
+            <img src="assets/images/hero.jpeg" alt="Sanjai Kumar" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback')">
+          </div>
+          <h3 class="profile-card__name">Sanjai Kumar</h3>
+          <p class="profile-card__role">Video Editor &amp; Digital Marketer</p>
+
+          <div class="profile-card__stats">
+            <div class="stat">
+              <span class="stat__value">2+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value stat--live">
+                <span class="live-dot"></span>Available
+              </span>
+              <span class="stat__label">For Freelance</span>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+      <span class="scroll-cue__line"></span>
+      <span class="scroll-cue__text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal="up">Who I Am</p>
+      <h2 class="section__title" data-reveal="up">About Me</h2>
+
+      <div class="about__grid">
+        <div class="about__main card" data-reveal="up">
+          <p>
+            My name is <strong>Sanjai Kumar</strong>, and I am a
+            <strong>B.Sc. Computer Science (AI &amp; DS)</strong> graduate from
+            <strong>Karpagam College</strong>.
+          </p>
+          <p>
+            I am passionate about <strong>Video Editing, Content Creation, Digital Marketing</strong>,
+            and continuously learning new skills.
+          </p>
+          <p>
+            I enjoy creating engaging visual content, storytelling through videos, helping
+            brands grow online, creating travel content, and understanding social media
+            audience engagement.
+          </p>
+        </div>
+
+        <div class="about__roles">
+          <div class="role-card card" data-reveal="up" style="--d:0s">
+            <span class="role-card__icon">🎬</span>
+            <span>Video Editor</span>
+          </div>
+          <div class="role-card card" data-reveal="up" style="--d:0.08s">
+            <span class="role-card__icon">📱</span>
+            <span>Social Media Manager</span>
+          </div>
+          <div class="role-card card" data-reveal="up" style="--d:0.16s">
+            <span class="role-card__icon">📊</span>
+            <span>Digital Marketing Team Member</span>
+          </div>
+          <div class="role-card card" data-reveal="up" style="--d:0.24s">
+            <span class="role-card__icon">🎨</span>
+            <span>UI/UX Designer Intern</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS & PLATFORMS ============ -->
+  <section class="section section--alt" id="tools">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal="up">Software &amp; Platforms</p>
+      <h2 class="section__title" data-reveal="up">Tools I Work With</h2>
+
+      <div class="tools-grid" id="toolsGrid">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IMPACT & RESULTS ============ -->
+  <section class="section" id="impact">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal="up">By The Numbers</p>
+      <h2 class="section__title" data-reveal="up">Impact &amp; Results</h2>
+
+      <div class="impact-grid" id="impactGrid">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section--alt" id="experience">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal="up">Where I've Worked</p>
+      <h2 class="section__title" data-reveal="up">Professional Experience</h2>
+
+      <div class="experience-card card" data-reveal="up">
+        <div class="experience-card__head">
+          <div>
+            <h3>Chakra Production</h3>
+            <p class="experience-card__sub">Digital Marketing Team</p>
+          </div>
+          <span class="experience-card__badge">Post Production Head</span>
+        </div>
+
+        <div class="experience-card__grid">
+          <div class="resp-item">
+            <span class="resp-item__icon">🎞️</span>
+            <p>Edited social media content for clients.</p>
+          </div>
+          <div class="resp-item">
+            <span class="resp-item__icon">📈</span>
+            <p>Worked on brand growth strategies.</p>
+          </div>
+          <div class="resp-item">
+            <span class="resp-item__icon">📱</span>
+            <p>Created engaging Instagram marketing videos.</p>
+          </div>
+          <div class="resp-item">
+            <span class="resp-item__icon">🎯</span>
+            <p>Produced promotional content.</p>
+          </div>
+          <div class="resp-item">
+            <span class="resp-item__icon">💬</span>
+            <p>Improved audience engagement through visual storytelling.</p>
+          </div>
+          <div class="resp-item">
+            <span class="resp-item__icon">⚙️</span>
+            <p>Managed post-production workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO EDITING SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal="up">Craft</p>
+      <h2 class="section__title" data-reveal="up">Video Editing Skills</h2>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHOTOGRAPHY ============ -->
+  <section class="section section--alt" id="photography">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal="up">Behind The Lens</p>
+      <h2 class="section__title" data-reveal="up">Photography</h2>
+
+      <div class="gallery" id="gallery">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img src="" alt="" id="lightboxImg" />
+    <div class="lightbox__caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- ============ INSTAGRAM REELS ============ -->
+  <section class="section" id="reels">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal="up">Watch</p>
+      <h2 class="section__title" data-reveal="up">Instagram Reels</h2>
+
+      <div class="reels-grid" id="reelsGrid">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section section--alt" id="education">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal="up">Background</p>
+      <h2 class="section__title" data-reveal="up">Education</h2>
+
+      <div class="education-card card" data-reveal="up">
+        <div class="education-card__icon">🎓</div>
+        <div>
+          <h3>Bachelor of Science</h3>
+          <p class="education-card__field">Computer Science (AI &amp; DS)</p>
+          <p class="education-card__school">Karpagam College</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section" id="contact">
+    <div class="section__inner">
+      <div class="cta card" data-reveal="up">
+        <h2 class="cta__title">Let's Work Together</h2>
+        <p class="cta__text">
+          Whether you need engaging video content, digital marketing strategies, or
+          creative storytelling, I'd love to collaborate and bring your ideas to life.
+        </p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cfName">Name</label>
+              <input type="text" id="cfName" name="name" placeholder="Your full name" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="cfEmail">Email</label>
+              <input type="email" id="cfEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="cfMessage">Message <span>(optional)</span></label>
+            <textarea id="cfMessage" name="message" rows="4" placeholder="Tell me a bit about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary form-submit">Send Message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="cta__socials">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><line x1="7.5" y1="10" x2="7.5" y2="16.5" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="7" r="1.1" fill="currentColor"/><path d="M11 16.5V10M11 12.7c0-1.5 1-2.7 2.5-2.7s2.5 1.2 2.5 2.7v3.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+          <a href="mailto:hello@sanjaikumar.com" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://wa.me/910000000000" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 9.3c.2-.6.6-.6 1-.6h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.8.1.1.1.3 0 .4-.1.2-.2.3-.3.4-.2.2-.3.3-.1.6.2.3.8 1.2 1.7 1.9 1.1.9 1.9 1.2 2.2 1.3.2.1.4.1.5-.1.2-.2.6-.7.8-.9.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.3.1.9-.2 1.3-.3.5-1.3 1-1.9 1.1-.5.1-1.1.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1Z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="#hero" class="footer__logo">SANJAI<span class="dot">.</span></a>
+
+    <nav class="footer__nav">
+      <a href="#about">About</a>
+      <a href="#tools">Tools</a>
+      <a href="#experience">Experience</a>
+      <a href="#photography">Photography</a>
+      <a href="#reels">Reels</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer__socials">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+      </a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><line x1="7.5" y1="10" x2="7.5" y2="16.5" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="7" r="1.1" fill="currentColor"/><path d="M11 16.5V10M11 12.7c0-1.5 1-2.7 2.5-2.7s2.5 1.2 2.5 2.7v3.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Sanjai Kumar. All rights reserved.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
