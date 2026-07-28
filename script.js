@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { thumb: 'assets/reels/reel1.jpeg', title: 'LOG video', desc: 'S LOG , color graded', url: 'https://www.instagram.com/reel/DZaE38ozS54/?igsh=MWpobHNleWV6YmJybg==' },
     { thumb: 'assets/reels/reel2.jpeg', title: 'PErsonal Branding ', desc: 'Branding, digital marketing', url: 'https://www.instagram.com/reel/DX4J4Ugz2sM/?igsh=MXExZ215NnQ2Z254NQ==' },
     { thumb: 'assets/reels/reel3.jpeg', title: 'Suryas_restaurant', desc: 'food reel', url: 'https://www.instagram.com/reel/DYW8MBAy6Fv/?igsh=MTVrN2ZkaHB1a2VzMg==' },
-    { thumb: 'assets/reels/IMG_2982.png', title: 'Trending Hook Edit', desc: 'High retention social cut', url: 'https://www.instagram.com/reel/DV5_moBCZ4f/?igsh=Ym1xNmo0NHk0Nmxo/' },
+    { thumb: 'assets/reels/reel4.jpg', title: 'Trending Hook Edit', desc: 'High retention social cut', url: 'https://www.instagram.com/reel/DV5_moBCZ4f/?igsh=Ym1xNmo0NHk0Nmxo/' },
   ];
   const reelsGrid = document.getElementById('reelsGrid');
   reels.forEach((r, i) => {
