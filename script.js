@@ -95,14 +95,14 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------------- DATA: TOOLS ---------------- */
   const tools = [
     { logoImg: 'capcut.logo.jpg', name: 'CapCut Pro', use: 'Fast-paced reel editing & captions'  },
-    { logoImg: 'assets/images/Davinci logo 3D.jpg', name: 'DaVinci Resolve', use: 'Color grading & cinematic cuts' },
-    { logoImg: 'assets/Canva.jpg', name: 'Canva', use: 'Social creatives & thumbnails' },
-    { logoImg: 'assets/Meta.jpg', name: 'Meta Ads Manager', use: 'Paid campaign management' },
-    { logoImg: 'assets/instagram.jpg', name: 'Instagram', use: 'Reels & audience growth' },
-    { logoImg: 'assets/YouTube.jpg', name: 'YouTube Studio', use: 'Long-form publishing & analytics' },
-    { logoImg: 'assets/Figma.jpg', name: 'Figma', use: 'UI/UX design & prototyping' },
-    { logoImg: 'assets/google.jpg', name: 'Google Analytics', use: 'Audience & performance tracking' },
-    { logoImg: 'assets/chatgpt.jpg', name: 'ChatGPT', use: 'AI-assisted ideation & workflows' },
+    { logoImg: 'Davinci logo 3D.jpg', name: 'DaVinci Resolve', use: 'Color grading & cinematic cuts' },
+    { logoImg: 'Canva.jpg', name: 'Canva', use: 'Social creatives & thumbnails' },
+    { logoImg: 'Meta.jpg', name: 'Meta Ads Manager', use: 'Paid campaign management' },
+    { logoImg: 'instagram.jpg', name: 'Instagram', use: 'Reels & audience growth' },
+    { logoImg: 'YouTube.jpg', name: 'YouTube Studio', use: 'Long-form publishing & analytics' },
+    { logoImg: 'Figma.jpg', name: 'Figma', use: 'UI/UX design & prototyping' },
+    { logoImg: 'google.jpg', name: 'Google Analytics', use: 'Audience & performance tracking' },
+    { logoImg: 'chatgpt.jpg', name: 'ChatGPT', use: 'AI-assisted ideation & workflows' },
   ];
    const toolsGrid = document.getElementById('toolsGrid');
   tools.forEach((t, i) => {
