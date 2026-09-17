@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { logoImg: 'Canva.jpg', name: 'Canva', use: 'Social creatives & thumbnails' },
     { logoImg: 'Meta.jpg', name: 'Meta Ads Manager', use: 'Paid campaign management' },
     { logoImg: 'instagram.jpg', name: 'Instagram', use: 'Reels & audience growth' },
-    { logoImg: 'YouTube.jpg', name: 'YouTube Studio', use: 'Long-form publishing & analytics' },
+    { logoImg: 'Youtube.jpg', name: 'YouTube Studio', use: 'Long-form publishing & analytics' },
     { logoImg: 'Figma.jpg', name: 'Figma', use: 'UI/UX design & prototyping' },
     { logoImg: 'google.jpg', name: 'Google Analytics', use: 'Audience & performance tracking' },
     { logoImg: 'chatgpt.jpg', name: 'ChatGPT', use: 'AI-assisted ideation & workflows' },
