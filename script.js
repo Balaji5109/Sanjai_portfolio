@@ -94,24 +94,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------------- DATA: TOOLS ---------------- */
   const tools = [
-    { logo: '🎬', name: 'CapCut Pro', use: 'Fast-paced reel editing & captions' },
-    { logo: '🎛️', name: 'DaVinci Resolve', use: 'Color grading & cinematic cuts' },
-    { logo: '🎨', name: 'Canva', use: 'Social creatives & thumbnails' },
-    { logo: '📢', name: 'Meta Ads Manager', use: 'Paid campaign management' },
-    { logo: '📸', name: 'Instagram', use: 'Reels & audience growth' },
-    { logo: '▶️', name: 'YouTube Studio', use: 'Long-form publishing & analytics' },
-    { logo: '🧩', name: 'Figma', use: 'UI/UX design & prototyping' },
-    { logo: '📊', name: 'Google Analytics', use: 'Audience & performance tracking' },
-    { logo: '🤖', name: 'ChatGPT', use: 'AI-assisted ideation & workflows' },
+    { logoImg: 'assets/capcut.logo.jpg', name: 'CapCut Pro', use: 'Fast-paced reel editing & captions'  },
+    { logoImg: 'assets/Davinci logo 3D.jpg', name: 'DaVinci Resolve', use: 'Color grading & cinematic cuts' },
+    { logoImg: 'assets/Canva.jpg', name: 'Canva', use: 'Social creatives & thumbnails' },
+    { logoImg: 'assets/Meta.jpg', name: 'Meta Ads Manager', use: 'Paid campaign management' },
+    { logoImg: 'assets/instagram.jpg', name: 'Instagram', use: 'Reels & audience growth' },
+    { logoImg: 'assets/YouTube.jpg', name: 'YouTube Studio', use: 'Long-form publishing & analytics' },
+    { logoImg: 'assets/Figma.jpg', name: 'Figma', use: 'UI/UX design & prototyping' },
+    { logoImg: 'assets/google.jpg', name: 'Google Analytics', use: 'Audience & performance tracking' },
+    { logoImg: 'assets/chatgpt.jpg', name: 'ChatGPT', use: 'AI-assisted ideation & workflows' },
   ];
-  const toolsGrid = document.getElementById('toolsGrid');
+   const toolsGrid = document.getElementById('toolsGrid');
   tools.forEach((t, i) => {
     const el = document.createElement('div');
     el.className = 'tool-card card';
     el.setAttribute('data-reveal', 'up');
     el.style.setProperty('--d', `${(i % 5) * 0.06}s`);
+    const logoHTML = t.logoImg
+      ? `<img src="${t.logoImg}" alt="${t.name} logo" loading="lazy">`
+      : t.logo;
     el.innerHTML = `
-      <div class="tool-card__logo">${t.logo}</div>
+      <div class="tool-card__logo">${logoHTML}</div>
       <div class="tool-card__name">${t.name}</div>
       <div class="tool-card__use">${t.use}</div>
     `;
