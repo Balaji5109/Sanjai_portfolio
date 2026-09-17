@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------------- DATA: TOOLS ---------------- */
   const tools = [
-    { logoImg: 'assets/capcut.logo.jpg', name: 'CapCut Pro', use: 'Fast-paced reel editing & captions'  },
-    { logoImg: 'assets/Davinci logo 3D.jpg', name: 'DaVinci Resolve', use: 'Color grading & cinematic cuts' },
+    { logoImg: 'capcut.logo.jpg', name: 'CapCut Pro', use: 'Fast-paced reel editing & captions'  },
+    { logoImg: 'assets/images/Davinci logo 3D.jpg', name: 'DaVinci Resolve', use: 'Color grading & cinematic cuts' },
     { logoImg: 'assets/Canva.jpg', name: 'Canva', use: 'Social creatives & thumbnails' },
     { logoImg: 'assets/Meta.jpg', name: 'Meta Ads Manager', use: 'Paid campaign management' },
     { logoImg: 'assets/instagram.jpg', name: 'Instagram', use: 'Reels & audience growth' },
