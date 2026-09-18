@@ -257,17 +257,21 @@ document.addEventListener('DOMContentLoaded', () => {
     { img: 'assets/images/edit2.jpeg' },
     { img: 'assets/images/edit3.jpeg' },
   ];
-  const gallery = document.getElementById('gallery');
+ const gallery = document.getElementById('gallery');
   photos.forEach((p, i) => {
     const el = document.createElement('div');
     el.className = 'gallery-item';
     el.setAttribute('data-reveal', 'up');
     el.style.setProperty('--d', `${(i % 3) * 0.08}s`);
     el.innerHTML = `
-      <img src="${p.img}" alt="Photography work" loading="lazy"
-           onerror="this.src='data:image/svg+xml;charset=UTF-8,${placeholderSVG('Photography')}'">
+      <img src="${p.img}" alt="${p.cat} photograph — ${p.loc}" loading="lazy"
+           onerror="this.src='data:image/svg+xml;charset=UTF-8,${placeholderSVG(p.cat)}'">
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__cat">${p.cat}</span>
+        <span class="gallery-item__loc">${p.loc}</span>
+      </div>
     `;
-    el.addEventListener('click', () => openLightbox(el.querySelector('img').src, ''));
+    el.addEventListener('click', () => openLightbox(el.querySelector('img').src, `${p.cat} — ${p.loc}`));
     gallery.appendChild(el);
     revealObserver.observe(el);
   });
