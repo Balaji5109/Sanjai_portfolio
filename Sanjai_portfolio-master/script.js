@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { logoImg: 'assets/images/YouTube.jpg', name: 'YouTube Studio', use: 'Long-form publishing & analytics' },
     { logoImg: 'assets/images/Figma.jpg', name: 'Figma', use: 'UI/UX design & prototyping' },
     { logoImg: 'assets/images/google.jpg', name: 'Google Analytics', use: 'Audience & performance tracking' },
-    { logoImg: 'assets/images/chatgpt.jpg', name: 'ChatGPT', use: 'AI-assisted ideation & workflows' },
+    { logoImg: 'assets/images/chatgpt.logo.jpg', name: 'ChatGPT', use: 'AI-assisted ideation & workflows' },
   ];
    const toolsGrid = document.getElementById('toolsGrid');
   tools.forEach((t, i) => {
@@ -250,12 +250,12 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------------- DATA: PHOTOGRAPHY GALLERY ---------------- */
   /* Replace the "img" path with your real photos in assets/images/ */
   const photos = [
-    { img: 'assets/images/photshoot.jpeg', cat: 'Photoshoot',  },
-    { img: 'assets/images/photoshoot1.jpeg', cat: 'Portrait',  },
-    { img: 'assets/images/cg.jpeg', cat: 'colorgrading',  },
-    { img: 'assets/images/edit1.jpeg', cat: 'Timeline', },
-    { img: 'assets/images/edit2.jpeg', cat: 'Timeline',  },
-    { img: 'assets/images/edit3.jpeg', cat: 'Timeline', },
+    { img: 'assets/images/photshoot.jpeg' },
+    { img: 'assets/images/photoshoot1.jpeg' },
+    { img: 'assets/images/cg.jpeg' },
+    { img: 'assets/images/edit1.jpeg' },
+    { img: 'assets/images/edit2.jpeg' },
+    { img: 'assets/images/edit3.jpeg' },
   ];
   const gallery = document.getElementById('gallery');
   photos.forEach((p, i) => {
@@ -264,14 +264,10 @@ document.addEventListener('DOMContentLoaded', () => {
     el.setAttribute('data-reveal', 'up');
     el.style.setProperty('--d', `${(i % 3) * 0.08}s`);
     el.innerHTML = `
-      <img src="${p.img}" alt="${p.cat} photograph — ${p.loc}" loading="lazy"
-           onerror="this.src='data:image/svg+xml;charset=UTF-8,${placeholderSVG(p.cat)}'">
-      <div class="gallery-item__overlay">
-        <span class="gallery-item__cat">${p.cat}</span>
-        <span class="gallery-item__loc">${p.loc}</span>
-      </div>
+      <img src="${p.img}" alt="Photography work" loading="lazy"
+           onerror="this.src='data:image/svg+xml;charset=UTF-8,${placeholderSVG('Photography')}'">
     `;
-    el.addEventListener('click', () => openLightbox(el.querySelector('img').src, `${p.cat} — ${p.loc}`));
+    el.addEventListener('click', () => openLightbox(el.querySelector('img').src, ''));
     gallery.appendChild(el);
     revealObserver.observe(el);
   });
