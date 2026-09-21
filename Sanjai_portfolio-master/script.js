@@ -250,6 +250,14 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------------- DATA: PHOTOGRAPHY GALLERY ---------------- */
   /* Replace the "img" path with your real photos in assets/images/ */
   const photos = [
+    { img: 'assets/images/creative/cookie.jpeg' },
+    { img: 'assets/images/creative/chakra1.png' },
+    { img: 'assets/images/creative/chakra2.png' },
+    { img: 'assets/images/creative/riya.png' },
+    { img: 'assets/images/creative/surya1.png' },
+    { img: 'assets/images/creative/surya2.png' },
+    { img: 'assets/images/creative/surya3.png' },
+    { img: 'assets/images/creative/surya4.png' },
     { img: 'assets/images/photshoot.jpeg' },
     { img: 'assets/images/photoshoot1.jpeg' },
     { img: 'assets/images/cg.jpeg' },
